@@ -1,4 +1,4 @@
-#VERSION 54 (at home as of October 13)
+#VERSION 54 (at home as of October 13 2017)
 #importing Tkinter and ttk
 #must remove ttk if formatting a widget
 #need to make sure student cannot proceed if name is invalid and if year level/school is not selected
