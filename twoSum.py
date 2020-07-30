@@ -27,16 +27,10 @@ def twoSum(nums, target):
 """
 nums = [2, 4, 3, 9]
 def twoSum(nums, target):
-        wanted = {}
-        for i in range(len(nums)): #i = 0, 1, 2, 3
-            n = nums[i] #n is the value
-            if n in wanted: 
-                return [wanted[n], i] #wanted[n] == i
-            else:
-                wanted[target-n] = i
-            print(wanted)
-        return []
+    for i in range(len(nums)): #[2,5,5,11]
+            for j in range(i+1, len(nums)):
+                if nums[i] + nums[j] == target:
+                    return [i, j]
 
-print(twoSum(nums, 10))
 
 
