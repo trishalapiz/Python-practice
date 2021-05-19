@@ -79,5 +79,5 @@ def countingValleys(n, s): #n = number of steps , s = string depicting path
             count += 1
     return count
 
-print(countingValleys(8, 'UDDDUDUU'))
-print(countingValleys(12, 'DDUUDDUDUUUD'))
+print(countingValleys(8, 'UDDDUDUU')) #1
+print(countingValleys(12, 'DDUUDDUDUUUD')) #2

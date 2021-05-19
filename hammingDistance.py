@@ -1,6 +1,6 @@
 #HAMMING DISTANCE
 
-def hammingDistance(sentence1, sentence2):
+def hammingDistanceLoop(sentence1, sentence2):
     distance = 0
     #print("sentence1 =", sentence1)
     #print("sentence2 =", sentence2)
@@ -26,12 +26,23 @@ def hammingDistance(sentence1, sentence2):
 
     return distance
 
+def hammingDistance(sentence1, sentence2):
+    #NO LOOPS
+    #use filter(), map()
+
+
+    pass
+
 
 def main():
 
-    string1 = "[To be or not to be, that is the question]"
-    string2 = "[To be~orAnoa [OBbej tVat i.Xt<eLju(s2ion]"
+    #string1 = "[To be or not to be, that is the question]"
+    #string2 = "[To be~orAnoa [OBbej tVat i.Xt<eLju(s2ion]"
 
+    string1 = "Trisha Lapiz"
+    string2 = "Tr1$ha L@p!z aaaa"
+
+    print("The Hamming Distance between {} and {} is".format(string1, string2), hammingDistanceLoop(string1, string2))
     print("The Hamming Distance between {} and {} is".format(string1, string2), hammingDistance(string1, string2))
 
 main()

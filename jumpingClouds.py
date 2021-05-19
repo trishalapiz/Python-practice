@@ -1,5 +1,5 @@
 #https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen
-
+#https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
 """
 Emma is playing a new mobile game that starts with consecutively numbered clouds.
 Some of the clouds are thunderheads and others are cumulus.
@@ -17,8 +17,19 @@ SAMPLE OUTPUT
 """
 def jumpingOnClouds(c): #c is a list of 0s and 1s
     #RETURN MINIMUM NUMBER OF JUMPS REQUIRED
+    index = 0
+    count = 0
+    length = len(c)
+    while index < length-1:
+        if index == length-2: #if at the end
+            index += 1
+        else:
+            if c[index + 2] != 0: #if can't take 2 steps, can surely take 1
+                index += 1
+            else:
+                index += 2
 
-    for i in range(len(c)):
-        
-    pass
+        count += 1
+            
+    
 
